@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Dark Mode Base -->
+    <color name="dark_bg">#0D0D0D</color>
+    <color name="dark_surface">#1A1A2E</color>
+    <color name="dark_card">#16213E</color>
+    <color name="dark_card_2">#1F1B2E</color>
+
+    <!-- Rose / Pink Palette -->
+    <color name="rose_primary">#FF2D78</color>
+    <color name="rose_light">#FF6BA8</color>
+    <color name="rose_dark">#C0114F</color>
+    <color name="rose_accent">#FF8FAB</color>
+    <color name="rose_glow">#FF2D7840</color>
+
+    <!-- Text -->
+    <color name="text_primary">#FFFFFF</color>
+    <color name="text_secondary">#B0B0C3</color>
+    <color name="text_muted">#888888</color>
+
+    <!-- Misc -->
+    <color name="divider">#2A2A4A</color>
+    <color name="white">#FFFFFF</color>
+    <color name="transparent">#00000000</color>
+</resources>

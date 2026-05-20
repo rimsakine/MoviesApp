@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.MoviesApp" parent="Theme.MaterialComponents.NoActionBar">
+        <item name="colorPrimary">@color/rose_primary</item>
+        <item name="colorPrimaryVariant">@color/rose_dark</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSecondary">@color/rose_accent</item>
+        <item name="android:windowBackground">@color/dark_bg</item>
+        <item name="android:statusBarColor">@color/dark_bg</item>
+        <item name="android:navigationBarColor">@color/dark_bg</item>
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+
+    <!-- Bouton Rose Gradient -->
+    <style name="RoseButton" parent="Widget.MaterialComponents.Button">
+        <item name="backgroundTint">@color/rose_primary</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textStyle">bold</item>
+        <item name="cornerRadius">30dp</item>
+        <item name="android:letterSpacing">0.1</item>
+    </style>
+</resources>

@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0D0D0D">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#0D0D0D">
+
+        <!-- Header -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:background="#0D0D0D">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="🎬 Ciné Maroc"
+                android:textColor="#E50914"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+
+            <!-- Bouton Favoris -->
+            <TextView
+                android:id="@+id/btnFavoritesNav"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="❤️"
+                android:textSize="22sp"
+                android:layout_marginEnd="12dp"/>
+
+            <TextView
+                android:id="@+id/btnNearbyCinemas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cinémas proches"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp"
+                android:background="@drawable/bg_rose_gradient"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:paddingTop="7dp"
+                android:paddingBottom="7dp"
+                android:layout_marginEnd="12dp"/>
+
+            <TextView
+                android:id="@+id/btnProfileNav"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Profil"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp"
+                android:background="@drawable/bg_search"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:paddingTop="7dp"
+                android:paddingBottom="7dp"
+                android:layout_marginEnd="12dp"/>
+
+            <!-- Bouton Login/Logout -->
+            <TextView
+                android:id="@+id/btnAuthNav"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="👤"
+                android:textSize="22sp"/>
+        </LinearLayout>
+
+        <!-- Bandeau recommandation personnalisée -->
+        <TextView
+            android:id="@+id/tvRecommendBanner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="✨ Recommandé pour vous"
+            android:textColor="#FFD700"
+            android:textSize="12sp"
+            android:background="#1A1A2E"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:paddingTop="6dp"
+            android:paddingBottom="6dp"
+            android:visibility="gone"/>
+
+        <!-- Search Bar -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:gravity="center_vertical">
+
+            <EditText
+                android:id="@+id/editTextSearch"
+                android:layout_width="0dp"
+                android:layout_height="44dp"
+                android:layout_weight="1"
+                android:hint="Rechercher un film..."
+                android:textColorHint="#888888"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                android:inputType="text"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:background="@drawable/bg_search"
+                android:layout_marginEnd="8dp"
+                android:imeOptions="actionSearch"/>
+
+            <Button
+                android:id="@+id/buttonSearch"
+                android:layout_width="wrap_content"
+                android:layout_height="44dp"
+                android:text="OK"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:background="@drawable/bg_rose_gradient"
+                android:paddingStart="18dp"
+                android:paddingEnd="18dp"/>
+
+            <!-- ✅ android:tint → app:tint corrigé ici -->
+            <ImageButton
+                android:id="@+id/buttonVoiceSearch"
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:layout_marginStart="8dp"
+                android:background="@drawable/bg_search"
+                android:contentDescription="Recherche vocale"
+                android:padding="10dp"
+                android:src="@android:drawable/ic_btn_speak_now"
+                app:tint="#FFFFFF"/>
+
+            <!-- ✅ android:tint → app:tint corrigé ici -->
+            <ImageButton
+                android:id="@+id/buttonCameraSearch"
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:layout_marginStart="8dp"
+                android:background="@drawable/bg_search"
+                android:contentDescription="Recherche par camera"
+                android:padding="10dp"
+                android:src="@android:drawable/ic_menu_camera"
+                app:tint="#FFFFFF"/>
+        </LinearLayout>
+
+        <!-- Chips genres -->
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:paddingBottom="8dp">
+            <LinearLayout
+                android:id="@+id/genreChipsLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"/>
+        </HorizontalScrollView>
+
+        <!-- Titre section -->
+        <TextView
+            android:id="@+id/sectionTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tous les films"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:paddingStart="16dp"
+            android:paddingTop="4dp"
+            android:paddingBottom="10dp"/>
+
+        <!-- Liste films -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:paddingBottom="8dp"
+            android:clipToPadding="false"/>
+
+    </LinearLayout>
+
+    <!-- FAB Chatbot -->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabChatbot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="16dp"
+        android:contentDescription="Ouvrir CineBot"
+        app:backgroundTint="#E50914"
+        app:srcCompat="@android:drawable/ic_dialog_email"
+        app:tint="#FFFFFF"/>
+
+</FrameLayout>

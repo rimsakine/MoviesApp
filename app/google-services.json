@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "571854401402",
+    "project_id": "moviesapp-38626",
+    "storage_bucket": "moviesapp-38626.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:571854401402:android:554f6755b858cf58c570c3",
+        "android_client_info": {
+          "package_name": "com.example.moviapp_rimsakine"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBWvROmG11PQQdPdmjOtGboy77YMeMjmzY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

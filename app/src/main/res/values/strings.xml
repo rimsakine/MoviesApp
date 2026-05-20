@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">MoviApp_RimSakine</string>
+    <string name="supabase_url">https://frrirqimphvbavjwceei.supabase.co</string>
+    <string name="supabase_anon_key">sb_publishable_zsUixxnbNi_30FJgZHQyaQ_3YqALVxz</string>
+    <string name="supabase_profile_bucket">profile-photos</string>
+</resources>
